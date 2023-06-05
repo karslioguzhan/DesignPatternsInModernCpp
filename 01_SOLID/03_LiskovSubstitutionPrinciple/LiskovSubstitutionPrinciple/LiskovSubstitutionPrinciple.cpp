@@ -73,6 +73,6 @@ int main()
 
     Square sq{ 5 }; 
     process(sq); // Liskov Substition is not respected, because functions for base classes 
-    // should work derived classes 
+    // should work with derived classes 
      
 }
