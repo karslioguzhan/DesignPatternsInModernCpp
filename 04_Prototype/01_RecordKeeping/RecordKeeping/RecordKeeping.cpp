@@ -137,7 +137,7 @@ private:
 //Contact EmployeeFactory::main{ "", new Address{ "123 East Dr", "London", 0 } };
 //Contact EmployeeFactory::aux{ "", new Address{ "123B East Dr", "London", 0 } };
 
-int main_3423()
+int main()
 {
     // this is tedious
     // Contact john{ "John Doe", new Address{"123 East Dr", "London"} };
