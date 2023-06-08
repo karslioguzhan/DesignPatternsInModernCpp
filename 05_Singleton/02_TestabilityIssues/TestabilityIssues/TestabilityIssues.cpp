@@ -6,6 +6,7 @@
 #include <vector>
 #include <gtest/gtest.h>
 
+
 class SingletonDatabase
 {
 private:
@@ -56,13 +57,14 @@ struct SingletonRecordFinder
 TEST(RecordFinderTests, SingletonTotalPopulationTest)
 {
     SingletonRecordFinder rf;
-    std::vector<std::string> names{"Seoul", "Mexico City"};
+    std::vector<std::string> names{"Seuol", "Mexico City"};
     int tp = rf.total_population(names);
     EXPECT_EQ(17500000 + 17400000, tp);
 }
 
 int main(int ac, char* av[])
 {
-    ::testing::InitGoogleTest(&ac, av);
+    testing::InitGoogleTest(&ac, av);
+    return RUN_ALL_TESTS();
 
 }
